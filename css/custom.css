@@ -13,8 +13,10 @@ body {
   /* Giữ tỷ lệ ảnh và cắt phần thừa để vừa khung */
   object-position: center;
   /* Canh giữa ảnh khi bị cắt */
-  aspect-ratio: 1 / 1;
+  /* aspect-ratio: 1 / 1; */
   /* Đảm bảo tỉ lệ 1:1 (vuông) */
+  border-radius: 68px;
+
 
 }
 
@@ -34,7 +36,17 @@ body {
 }
 
 .pogoSlider {
-  height: 100vh;
+  height: 100vh !important;
+  max-height: none !important;
+  /* Remove any max-height restriction from default Pogo Slider CSS */
+
+}
+
+.pogoSlider-slide {
+  /* object-fit: contain !important; */
+  /* background-size: contain !important; */
+  background-position: center center !important;
+
 }
 
 #drag-container,
@@ -118,8 +130,9 @@ body {
 }
 
 * {
-  font-family:  'Playfair Display' !important;
+  font-family: 'Playfair Display' !important;
 }
+
 .map-container {
   margin-top: 20px;
   width: 100%;
@@ -187,6 +200,14 @@ body {
   margin-bottom: 8px;
 }
 
+.note {
+  margin-top: 64px;
+  font-size: 19px;
+  background: #f9d3cf;
+  padding: 12px;
+  border-radius: 18px;
+}
+
 @media (max-width: 768px) {
   .calendar-container {
     padding: 10px;
@@ -200,4 +221,12 @@ body {
     font-size: 18px;
   }
 
+
+  .img-fluid {
+    border-radius: 40px;
+  }
+
+  .gallery-box ul li {
+    border-width: 12px;
+  }
 }
