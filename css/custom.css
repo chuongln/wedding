@@ -2,11 +2,13 @@
 body {
   overflow-x: hidden !important;
   background-color: #f8e0de !important;
+
 }
 
 .font-khac {
   font-family: "Dancing Script", cursive !important;
 }
+
 .typed-cursor {
   display: none !important;
   font-weight: 600;
@@ -42,8 +44,8 @@ body {
 .pogoSlider {
   height: 100vh !important;
   max-height: none !important;
-  /* Remove any max-height restriction from default Pogo Slider CSS */
-
+  max-width: 100vw !important;
+  width: 100vw !important;
 }
 
 .pogoSlider-slide {
@@ -222,7 +224,12 @@ body {
     margin-top: 20px;
 
   }
-
+  .col-6:has(.img-box) {
+  
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .img-box {padding: 0 !important;}
   .day {
     width: 38px;
     height: 38px;
@@ -231,7 +238,7 @@ body {
 
 
   .img-fluid {
-    border-radius: 40px;
+    border-radius: 28px;
   }
 
   .gallery-box ul li {

@@ -143,7 +143,7 @@
 							</div>
 							<div class="col-lg-8 col-md-6 col-sm-12">
 								<h2> About <span>Ngọc Chương</span></h2>
-								<p>Nếu không cần thiết thì không lên kế hoạch gì cả, nhưng nếu ai đấy lên kế hoạch rồi thì ráng chút
+								<p>Nếu không cần thiết thì sẽ không lên kế hoạch, nhưng nếu có người lên kế hoạch rồi thì ráng chút
 									cũng theo được. Ông hoàng kiên nhẫn, chúa tể tìm đường, sẽ cảm thấy bị "xúc phạm" nếu ai đấy mở map ra
 									để chỉ đường. Cuối tuần nếu có thể không ra ngoài chắc chắn sẽ không rời nhà. Câu cửa miệng "5' anh
 									dậy nhớ~". </p>
@@ -154,7 +154,7 @@
 				<div class="note">
 					Và bằng một cách nào đó, hai con người tưởng như chẳng liên quan này lại va vào nhau. Tuy có những điểm khác
 					biệt và còn nhiều khiếm khuyết, nhưng chúng mình vẫn luôn cố gắng để hoàn thiện bản thân mỗi ngày và luôn đồng
-					hành cùng nhau trên hành trình ấy. Và ngày hôm nay sẽ là một dấu mốc quan trọng trong chặng hành trình của
+					hành cùng nhau trên hành trình ấy. Ngày hôm nay sẽ là một dấu mốc quan trọng trong chặng hành trình của
 					chúng mình, mời mọi người đến chung vui cùng chúng mình nhé!
 				</div>
 			</div>
@@ -301,7 +301,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-6">
-					<div class="title-box" style="padding: 0 8px;" data-aos="fade-right">
+					<div class="title-box img-box" style="padding: 0 8px;" data-aos="fade-right">
 						<img class="img-fluid" srcset="
               https://res.cloudinary.com/dyft4myia/image/upload/w_480,q_auto,f_auto/v1747674547/15.jpg 480w,
               https://res.cloudinary.com/dyft4myia/image/upload/w_768,q_auto,f_auto/v1747674547/15.jpg 768w,
@@ -727,7 +727,13 @@
 	<script>
 		AOS.init();
 	</script>
-
+<script>
+  window.addEventListener('scroll', () => {
+    if (window.scrollX !== 0) {
+      window.scrollTo(0, window.scrollY);
+    }
+  });
+</script>
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 	<script>
 		setTimeout(() => {
